@@ -18,11 +18,12 @@ export const TextSlider = ({ text, width = "fit-content" }: Props) => {
       x: 0,
     },
     animate: {
-      x: "-140%",
+      x: "-180%",
       opacity: 1,
       transition: {
+        ease: "linear",
         repeat: Infinity,
-        duration: 10,
+        duration: 20,
       },
     },
   };
@@ -38,13 +39,15 @@ export const TextSlider = ({ text, width = "fit-content" }: Props) => {
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <motion.div
-      className={styles.slider}
-      variants={sliderVariants}
-      initial="initial"
-      animate="animate"
-    >
-      {text}
-    </motion.div>
+    <div style={{ overflow: "hidden", maxWidth: "90vw" }}>
+      <motion.div
+        className={styles.slider}
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
+        {text}
+      </motion.div>
+    </div>
   );
 };
