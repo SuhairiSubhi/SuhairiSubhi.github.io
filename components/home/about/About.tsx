@@ -13,20 +13,28 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey there! My name is Suhairi and I have always been enthusiastic
-              about applying my academic expertise,{" "}
-              <span className={styles.highlightText}>strong work ethic</span>,
-              and dedication to contribute to a dynamic team as a{" "}
-              <span className={styles.highlightText}>team player</span> and
-              foster{" "}
-              <span className={styles.highlightText}>professional growth</span>.
+              Hey there! My name is Suhairi and I have always been passionate
+              for applying my academic prowess and
+              <span className={styles.highlightText}>
+                {" "}
+                strong work ethic{" "}
+              </span>{" "}
+              to make meaningful contributions. Eager to collaborate as a
+              <span className={styles.highlightText}> team player </span>, I
+              aspire to
+              <span className={styles.highlightText}>
+                {" "}
+                foster professional growth{" "}
+              </span>
+              within a dynamic and collaborative team environment.
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I am adept at{" "}
+              I am adept at
               <span className={styles.highlightText}>
-                full-stack development
+                {" "}
+                full-stack development{" "}
               </span>
               , with a strong focus on delivering{" "}
               <span className={styles.highlightText}> high-quality code </span>

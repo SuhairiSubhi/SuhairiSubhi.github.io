@@ -24,7 +24,7 @@ const projects = [
     projectLink: "#",
     tech: ["TensorFlow", "Keras", "Python", "Pandas"],
     description:
-      "A self-trained Artificial Intelligence Model(Convoluted Neural Network) on self collected dataset(images) to identify pastries between 4 countries: France, Portugal, Morocco and Malaysia based on given images",
+      "A self-trained Artificial Intelligence Model(Convolutional Neural Network) on self collected dataset(images) to identify pastries between 4 countries: France, Portugal, Morocco and Malaysia based on given images",
     modalContent: "",
   },
   {
