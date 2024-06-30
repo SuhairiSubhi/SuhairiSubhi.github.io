@@ -18,6 +18,36 @@ export const Projects = () => {
 
 const projects = [
   {
+    title: "Dewan Bersalin Muslimah",
+    imgSrc: "project-imgs/dbm.png",
+    code: "#",
+    projectLink: "https://www.dbmhospital.com.my/",
+    tech: ["WordPress", "Elementor", "CSS"],
+    description:
+      "The Dewan Bersalin Muslimah website is the official website for a private birthcare hospital, with several branches in Malaysia. It focuses on providing maternity services with an emphasis on Islamic values and privacy. The site details their offerings, their branches information and their establishment history.",
+    modalContent: "",
+  },
+  {
+    title: "Zpheres NFT",
+    imgSrc: "project-imgs/zpheres.jpg",
+    code: "#",
+    projectLink: "#",
+    tech: ["React", "TypeScript", "Metaplex", "Solana"],
+    description:
+      "Web application using React and Metaplex for minting new NFT on Solana blockchain",
+    modalContent: "",
+  },
+  {
+    title: "BedBoat",
+    imgSrc: "project-imgs/bedboat.png",
+    code: "#",
+    projectLink: "https://bedboat.fr/",
+    tech: ["NodeJS", "Express", "NextJS", "TypeScript"],
+    description:
+      "Managed migration of the old web application on Symfony PHP to modern framework Express",
+    modalContent: "",
+  },
+  {
     title: "PastryML",
     imgSrc: "project-imgs/pastryml.png",
     code: "#",
@@ -35,26 +65,6 @@ const projects = [
     tech: ["JavaScript", "JQuery", "Python", "Concurrent System"],
     description:
       "A basic front end web application for handling concurrent response from the users, based on first-come-first-serve basis",
-    modalContent: "",
-  },
-  {
-    title: "BedBoat",
-    imgSrc: "project-imgs/bedboat.png",
-    code: "#",
-    projectLink: "https://bedboat.fr/",
-    tech: ["NodeJS", "Express", "NextJS", "TypeScript"],
-    description:
-      "Managed migration of the old web application on Symfony PHP to modern framework Express",
-    modalContent: "",
-  },
-  {
-    title: "Zpheres NFT",
-    imgSrc: "project-imgs/zpheres.jpg",
-    code: "#",
-    projectLink: "#",
-    tech: ["React", "TypeScript", "Metaplex", "Solana"],
-    description:
-      "Web application using React and Metaplex for minting new NFT on Solana blockchain",
     modalContent: "",
   },
   {

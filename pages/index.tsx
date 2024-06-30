@@ -6,7 +6,7 @@ export default function home() {
     <>
       <Head>
         <title>Suhairi Subhi | Software Engineer</title>
-        <meta name="description" content="Bleep boop" />
+        <meta name="description" content="Digital Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
