@@ -1,88 +1,112 @@
-# YO! Welcome to the "Steam" developer portfolio template
+# Suhairi Subhi's Portfolio Website
 
-Steam is a starter template designed to help you land more interviews. Below we'll walk through exactly how you can customize this template to make it your own.
+Welcome to the technical documentation of my portfolio website, hosted at [suhairisubhi.github.io](https://suhairisubhi.github.io). This readme provides an overview of the technologies, tools, and methodologies used in developing and maintaining this website.
 
-Before we go too far, note that I've provided a video walkthrough of the entire project [HERE](https://youtu.be/hu-XLI3bFX8).
+## Table of Contents
 
-You can also find a live version of this project deployed at [https://steam-portfolio-demo.vercel.app/](https://steam-portfolio-demo.vercel.app/).
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Development Workflow](#development-workflow)
+- [Deployment](#deployment)
+- [Future Enhancements](#future-enhancements)
+- [Contact](#contact)
 
-## Let's get things running
+## Technologies Used
 
-This template is built on top of [NextJS](https://nextjs.org/), a full stack development framework built on top of React.
+### Frontend
 
-We won't take time here going over exactly how NextJS works on a deep level (to be fair, this project doesn't use Next at a deep level), but if you're interested in learning, their docs are [here](https://nextjs.org/docs/getting-started).
+- **HTML5**: For structuring the content on the web pages.
+- **CSS3**: For styling and layout design to create a responsive and visually appealing interface.
+- **JavaScript**: For adding interactivity and dynamic features to the website.
+- **React**: Utilized for building the user interface components and managing the state of the application.
+- **Bootstrap**: Used for responsive design and prebuilt UI components to speed up development.
 
-At the root of your project, you'll see a `package.json` file defining our dependencies.
+### Backend
 
-Most of this is boilerplate, but I will call out the following three dependencies:
+- **GitHub Pages**: The website is hosted on GitHub Pages, leveraging its capabilities for static site hosting.
 
-- `animejs` -> A javascript animation library, used for the grid animation inside of DotGrid.tsx
-- `framer-motion` -> A react based animation library, used in a hand full of places (anywhere you see `<motion.el />` style components)
-- `sass` -> All styling uses plain CSS and sass modules for this project
+### Tools and Libraries
 
-Now that's out of the way, you can get your project running by first installing dependencies.
+- **Git**: Used for version control to track changes and collaborate on the project.
+- **Webpack**: A module bundler used to compile JavaScript modules and manage dependencies.
+- **Babel**: A JavaScript compiler that allows the use of next-generation JavaScript, transforming it into a backwards-compatible version.
+- **ESLint**: A static code analysis tool for identifying problematic patterns in JavaScript code.
+- **Prettier**: A code formatter to maintain a consistent style across the codebase.
+- **npm**: Node Package Manager used for managing project dependencies.
 
-From your terminal, run:
+## Project Structure
 
-```
-npm install
-# or
-yarn install
-```
-
-This will take a minute or two, but once that's done, you should be able to run the following command:
-
-```
-npm run dev
-# or
-yarn dev
-```
-
-This will start your project on `localhost:3000`
-
-## The file structure
-
-Because this is a NextJS project, we follow the standard NextJS pattern for organizing this project.
-
-Inside of the `pages/` directly you'll find 3 files:
-
-- `_app.tsx` -> A file which wraps around every page in our app. Here we import the Poppins font and include it in our page. You can change to use whatever font you'd like here ([docs](https://nextjs.org/docs/basic-features/font-optimization)).
-- `_document.tsx` -> Essentially the NextJS version of your base "HTML document". Nothing fancy here.
-- `_index.tsx` -> This represents our home route. We include 1 single component here called `<Home />`. Click into this component to begin exploring.
-
-To add MORE routes to your project, see [this doc](https://nextjs.org/docs/basic-features/pages).
-
-Inside of the `styles/` directly you'll find find a global CSS file. This just includes a basic reset, as well as a couple of classes we use throughout the project.
-
-Inside of the `components/` directory you'll find all of the good stuff. The `components/home/` directory houses the majority of what you'll like want to edit
-
-## Styling
-
-Global styling (colors mainly) are defined using CSS variables in the `styles/globals.css` file.
+The project structure is organized as follows:
 
 ```
-  --background: rgb(17, 17, 17);
-  --bg-opaque: rgb(17, 17, 17, 0.25);
-  --background-light: rgb(35, 35, 35);
-  --background-dark: rgb(8, 8, 8);
-
-  --text: rgb(235, 236, 243);
-  --brand: rgb(10, 255, 157);
-
-  --text-xs: 1.6rem;
-  --text-sm: 1.8rem;
-  --text-md: 2.2rem;
-  --text-lg: 3.6rem;
-  --text-xl: 5.6rem;
-  --text-2xl: 9.6rem;
+/portfolio-website
+├── public
+│ ├── index.html
+│ └── assets
+│ ├── images
+│ └── styles
+├── src
+│ ├── components
+│ │ ├── Header.js
+│ │ ├── Footer.js
+│ │ ├── Projects.js
+│ │ └── About.js
+│ ├── App.js
+│ ├── index.js
+│ └── styles
+│ ├── App.css
+│ └── components
+├── .gitignore
+├── package.json
+├── README.md
+└── webpack.config.js
 ```
 
-The first six variables are the colors for the app. The last six are font sizes. Play around with these a bit to start making it your own.
+## Development Workflow
 
-## More info
+1. **Clone the Repository**: Clone the repository to your local machine using Git.
 
-That's the basics! If you're comfortable digging in yourself, then you should be set.
+   ```sh
+   git clone https://github.com/suhairisubhi/portfolio-website.git
+   ```
 
-Want a deeper walkthrough??
+2. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies using npm.
+   ```sh
+   cd portfolio-website
+   npm install
+   ```
+3. **Run Development Server**: Start the development server to view the website locally.
+   ```sh
+   npm run build
+   ```
 
-[WATCH THE TUTORIAL VIDEO](https://youtu.be/hu-XLI3bFX8)
+## Deployment
+
+The website is deployed using GitHub Pages. The deployment process involves the following steps:
+
+1. **Build the Project**: Ensure the project is built for production.
+
+   ```sh
+   npm run build
+   ```
+
+2. **Deploy to GitHub Pages**: Use the gh-pages branch for deployment.
+   ```sh
+   npm run deploy
+   ```
+
+## Future Enhancements
+
+- **Accessibility Improvements**: Enhance the website's accessibility to ensure it is usable by people with various disabilities.
+- **Performance Optimization**: Optimize the loading times and performance of the website.
+- **New Features**: Continuously add new features and projects to showcase my latest work.
+
+## Contact
+
+Feel free to reach out to me for any inquiries or collaboration opportunities:
+
+- **Email**: suhairi.subhi@gmail.com
+- **LinkedIn**: [linkedin.com/in/suhairisubhi](https://linkedin.com/in/suhairi-subhi)
+- **GitHub**: [github.com/suhairisubhi](https://github.com/suhairisubhi)
+
+Thank you for visiting my portfolio!
